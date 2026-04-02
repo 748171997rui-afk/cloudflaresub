@@ -13,6 +13,29 @@
   <img src="https://img.shields.io/badge/status-active-00C853" alt="Status Active" />
 </p>
 
+## 功能特性
+
+- 支持 `vmess`、`vless`、`trojan` 节点解析
+- 支持 Base64 订阅文本自动展开
+- 支持 `host[:port][#remark]` 格式的优选地址
+- 结果写入 Workers KV，生成 `/sub/:id` 短链
+- 相同输入自动去重（7 天 TTL）
+- 支持 `SUB_ACCESS_TOKEN` 访问令牌保护
+- 支持导出：Raw（Base64）/ Clash（YAML）/ Surge（文本）
+
+## 项目结构
+
+```text
+cloudflaresub/
+├─ src/
+│  ├─ worker.js      # Worker 入口（API + 订阅输出）
+│  └─ core.js        # 解析/渲染核心函数（测试使用）
+├─ public/           # 前端静态资源
+├─ tests/smoke.mjs   # Smoke test
+├─ wrangler.toml
+└─ package.json
+```
+
 ## 快速开始（Cloudflare 网页端）
 ```text
 视频部署流程：https://youtu.be/E5PI0LsQ43M
@@ -84,30 +107,6 @@
 
 - 如果你使用 GitHub 自动部署：直接 push 到对应分支，Cloudflare 会自动重新部署
 - 如果你不用 GitHub 自动部署：可在 Dashboard 在线编辑器中修改后手动部署
-
-
-## 功能特性
-
-- 支持 `vmess`、`vless`、`trojan` 节点解析
-- 支持 Base64 订阅文本自动展开
-- 支持 `host[:port][#remark]` 格式的优选地址
-- 结果写入 Workers KV，生成 `/sub/:id` 短链
-- 相同输入自动去重（7 天 TTL）
-- 支持 `SUB_ACCESS_TOKEN` 访问令牌保护
-- 支持导出：Raw（Base64）/ Clash（YAML）/ Surge（文本）
-
-## 项目结构
-
-```text
-cloudflaresub/
-├─ src/
-│  ├─ worker.js      # Worker 入口（API + 订阅输出）
-│  └─ core.js        # 解析/渲染核心函数（测试使用）
-├─ public/           # 前端静态资源
-├─ tests/smoke.mjs   # Smoke test
-├─ wrangler.toml
-└─ package.json
-```
 
 ## API 说明
 
