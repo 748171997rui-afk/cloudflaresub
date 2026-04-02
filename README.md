@@ -1,16 +1,11 @@
-<table>
-  <tr>
-    <td width="96" valign="middle">
-      <img src="./public/icons/auto.svg" alt="CloudflareSub Logo" width="72" />
-    </td>
-    <td valign="middle">
-      <h1>CloudflareSub</h1>
-      <p><strong>一个轻量化的优选IP订阅器</strong></p>
-    </td>
-  </tr>
-</table>
+<h1 align="center">
+  <img src="./public/icons/auto.svg" alt="CloudflareSub Logo" width="86" />
+  CloudflareSub
+</h1>
 
-<p>
+<p align="center"><em>一个轻量化的优选IP订阅器</em></p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/license-MIT-2ea44f" alt="License MIT" />
   <img src="https://img.shields.io/badge/platform-Windows-0078D6" alt="Windows" />
   <img src="https://img.shields.io/badge/platform-macOS-111111" alt="macOS" />
