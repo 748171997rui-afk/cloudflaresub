@@ -1,6 +1,5 @@
 <h1 align="center">
-  <img src="./public/icons/auto.svg" alt="CloudflareSub Logo" width="20" />
-  CloudflareSub
+  <img src="./public/icons/auto.svg" alt="CloudflareSub Logo" height="40" align="absmiddle" /> CloudflareSub
 </h1>
 
 <p align="center"><em>一个轻量化的优选IP订阅器</em></p>
